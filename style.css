@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: arial;
+  color: #8c1b2f;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8c1b2f;
+}
+
+#titre {
+  color: white;
+  font-size: 5rem;
+  padding: 20px;
+}
+
+/* Fiche produit */
+.produit-container {
+  width: 65.5%;
+  background-color: white;
+  color: #8c1b2f;
+  display: flex;
+}
+
+/* Images produit à gauche */
+.produit-images {
+  flex: 1;
+}
+
+/* Image ne dépasse pas de son contenant */
+.full-img-container {
+  height: 350px;
+  overflow: hidden;
+}
+
+.full {
+  max-width: 100%;
+}
+/* Les vignettes */
+.vignettes-container {
+  display: flex;
+}
+
+.small {
+  flex: 1;
+  width: 5%;
+  margin: 1rem;
+}
+
+/* Infos produit à droite */
+.produit-infos {
+  flex: 1;
+  padding: 2rem;
+}
+
+h1.produit-titre {
+  font-size: 4rem;
+}
+
+p.produit-prix {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+p.description {
+  font-size: 2rem;
+}
+
+button.btn-add {
+  background-color: #8c1b2f;
+  color: white;
+  padding: 2rem;
+  outline: none;
+  border: none;
+  margin: 2rem 0;
+}
+
+/* Partie responsive */
+@media screen and (max-width: 800px) {
+  .container {
+    height: auto; /* Annule la height:vh */
+  }
+
+  .produit-container {
+    flex-direction: column;
+  }
+
+  .full-img-container {
+    height: auto; /* Annule la height:350px */
+  }
+
+  .vignettes-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .small {
+    width: 50%;
+  }
+
+  .produit-titre,
+  .produit-prix {
+    text-align: center;
+  }
+
+  .description {
+    text-align: justify;
+  }
+}
