@@ -1,0 +1,5 @@
+Au clic (event) sur une vignette (élément)
+la vignette (élément)  s'affiche en grand format (action)
+
+Au clic (event) sur le bouton ajouter (élément)
+Affichage de la quantité (action) dans le panier (élément)
